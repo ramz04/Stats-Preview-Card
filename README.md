@@ -28,7 +28,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ### Links
 
 - Solution URL: [Github](https://github.com/ramz04/Stats-Preview-Card/)
-- Live Site URL: [Vercel](https://product-card-neon.vercel.app/)
+- Live Site URL: [Vercel](https://stats-preview-card-omega-wine.vercel.app/)
 
 ### Built with
 
