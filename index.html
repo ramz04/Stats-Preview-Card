@@ -25,26 +25,22 @@
             White: 'hsl(0, 0%, 100%)',
             Slightlytransparentwhite:'hsla(0, 0%, 100%, 0.75)',
             Slightlytransparent: 'hsla(0, 0%, 100%, 0.6)',
+          },
+          backgroundImage:{
+            'bgdesktop':"url('/images/image-header-desktop.jpg')",
+            'bgmobile':"url('/images/image-header-mobile.jpg')"
           }
         }
       }
     }
   </script>
-
-  <style>
-    .right {
-      min-height: 265px;
-      background-image: url(images/image-header-desktop.jpg);
-    }
-  </style>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-Verydarkblue flex items-center justify-center h-screen p-4">
+<body class="h-[100vh] bg-Verydarkblue">
 
   <!-- Get insights that help your business grow.
 
@@ -54,36 +50,38 @@
   10k+ companies
   314 templates
   12m+ queries -->
-
-    <div class="h-5/5 w-3/5  sm:flex sm:flex-row-reverse sm:h-2/5 sm:w-10/12 md:flex md:flex-row-reverse md:h-3/5 md:w-9/12 bg-Darkdesaturatedblue rounded-xl">
-      <div
-      class="right bg-Softviolet bg-center bg-blend-multiply bg-cover bg-no-repeat md:w-1/2 rounded-t-lg md:rounded-tl-none md:rounded-r-lg"
-    ></div>
-      <div class="basis-2/4 p-1 md:flex md:flex-col md:justify-between md:items-start md:justify-between sm:flex sm:flex-col sm:justify-between sm:items-baseline p-2">
-        <div class="flex flex-col md:flex md:flex-col md:text-left sm:flex sm:flex-col sm:text-left text-center p-2 md:p-8">
-          <h1 class="text-white text-xl md:text-4xl tracking-wide font-black mt-1 " style="font-family: 'Inter', sans-serif;">Get <span class="text-Softviolet">insights</span> that help your business grow.</h1>
-          <p class="text-Slightlytransparent text-xs mt-1 md:text-sm md:tracking-widest md:mt-8 md:p-x-4">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-            experience, and overall efficiency.</p>
-        </div>
-        <div class="mt-1 text-center text-white flex flex-col gap-y-3 sm:gap-x-5 sm:gap-y-2 md:gap-x-10 items-center sm:items-end sm:ml-3 md:items-end md:justify-between h-full sm:flex sm:flex-row md:flex md:flex-row p-2 md:p-4" style="font-family: 'Inter', sans-serif;">
-          <div>
-            <h3 class="font-bold text-lg md:text-2xl">10k+</h3>
-            <p class="uppercase text-[9px] tracking-widest text-Slightlytransparentwhite md:text-[12px]">companies</p>
-          </div>
-          <div>
-            <h3 class="font-bold text-lg md:text-2xl">314</h3>
-            <p class="uppercase text-[9px] tracking-widest text-Slightlytransparentwhite md:text-[12px]">templates</p>
-          </div>
-          <div>
-            <h3 class="font-bold text-lg md:text-2xl">12M+</h3>
-            <p class="uppercase text-[9px] tracking-widest text-Slightlytransparentwhite md:text-[12px]">queries</p>
-          </div>
+    <main class="h-[92%]">
+      <div class="h-full flex justify-center items-center p-4">
+        <div class="w-[250px] md:w-[1000px]  bg-Darkdesaturatedblue rounded-lg md:flex flex-row-reverse ">
+          <div class="bg-bgmobile md:bg-bgdesktop min-h-[200px] object-center md:rounded-r-lg md:rounded-l-none   bg-Softviolet opacity-80 bg-blend-multiply bg-cover  bg-no-repeat rounded-t-lg md:basis-1/2 "></div>
+          <div class="basis-1/2 md:flex md:flex-col md:justify-between md:items-start md:justify-between p-2 md:p-6">
+            <div class="flex flex-col md:flex md:flex-col md:text-left text-center p-2 md:p-8 ">
+              <h1 class="text-white text-xl md:text-3xl tracking-wide font-black mt-3 " style="font-family: 'Inter', sans-serif;">Get <span class="text-Softviolet">insights</span> that help your business grow.</h1>
+              <p class="text-Slightlytransparent text-xs mt-3 md:text-sm md:tracking-widest md:mt-8 md:p-x-4">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+                experience, and overall efficiency.</p>
+                <div class="mt-3 text-center  text-white flex flex-col gap-y-5 justify-around md:gap-y-0  items-center h-full p-2 md:items-start md:p-0 md:mt-16" style="font-family: 'Inter', sans-serif;">
+                  <ul class="flex flex-col md:flex-row  gap-y-4 md:justify-between md:gap-x-10 items-center">
+                    <li>
+                      <h3 class="font-bold text-lg md:text-2xl">10k+</h3>
+                      <p class="uppercase text-[9px] tracking-widest text-Slightlytransparentwhit md:text-[12px]">companies</p>
+                    </li>
+                    <li>
+                      <h3 class="font-bold text-lg md:text-2xl">314</h3>
+                      <p class="uppercase text-[9px] tracking-widest text-Slightlytransparentwhite md:text-[12px]">templates</p>
+                    </li>
+                    <li>
+                      <h3 class="font-bold text-lg md:text-2xl">12M+</h3>
+                      <p class="uppercase text-[9px] tracking-widest text-Slightlytransparentwhite md:text-[12px]">queries</p>
+                    </li>
+                  </ul>
+                </div>
+            </div>
         </div>
       </div>
-    </div>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    </main>
+  <div class="text-center text-white " style="font-family: 'Inter', sans-serif;">
+    Challenge by <a class="text-Softviolet" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ramz04" class="text-Softviolet">Abdul-Rahman Wunpini</a>.
+  </div>
 </body>
 </html>
